@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.local
+.env.production
+logs/
+dist/
+build/
+coverage/
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+.venv/
+ml-service/models/*.pkl
+ml-service/models/*.joblib
