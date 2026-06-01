@@ -114,8 +114,8 @@ const UserSchema = new mongoose.Schema(
 );
 
 // ── Indexes ────────────────────────────────────────────────────
-UserSchema.index({ email: 1 });
-UserSchema.index({ username: 1 });
+// email and username are already indexed via unique:true on the field definition.
+// Only declare additional indexes here.
 UserSchema.index({ 'churnRisk.label': 1 });
 UserSchema.index({ createdAt: -1 });
 
