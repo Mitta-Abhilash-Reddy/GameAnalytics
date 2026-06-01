@@ -53,7 +53,7 @@ Built as a portfolio project targeting Software Engineering roles at gaming comp
 
 ## ✨ Features
 
-### ✅ Phase 1 – Authentication (Complete)
+### ✅ Phase 1 – Authentication 
 - JWT-based authentication (register / login / logout)
 - Role-based access control (Player / Analyst / Admin)
 - Bcrypt password hashing (salt rounds: 12)
