@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 
 const authRoutes = require('./routes/authRoutes');
+const eventRoutes = require('./routes/eventRoutes');
 const { globalErrorHandler, notFoundHandler } = require('./middleware/errorHandler');
 const logger = require('./utils/logger');
 
@@ -72,9 +73,7 @@ app.get('/health', (req, res) => {
 
 // ── API Routes ─────────────────────────────────────────────────
 app.use('/api/auth', authRoutes);
-
-// Phase 2: events routes will be added here
-// app.use('/api/events', eventRoutes);
+app.use('/api/events', eventRoutes);
 
 // Phase 3: analytics routes will be added here
 // app.use('/api/analytics', analyticsRoutes);
